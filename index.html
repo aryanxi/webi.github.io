@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js"></script>
+   
 </head>
 <body>
 <section class="header">
      <nav>
-         <a href="1st.html"> <img src="photos/ROYAL-removebg-preview.png" alt="there suppose to be image here "></a>
-         <div class="nav-links">
+         <a href="index.html"> <img src="Royal Academy-1.png" alt="there suppose to be image here "></a>
+         <div class="nav-links" id="navlinks">
+
+            <i class="fa fa-times" onclick="hidemenu()"></i>
              <ul type="">
-                 <li><a href="1st.html">Home</a></li>
-                <li><a href="">Campus</a></li>
-                 <li><a href="">Deparments</a></li>
-                 <li><a href="">Admissions</a></li>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="#camp">Campus</a></li>
+            
+                 <li><a href="#admi">Admissions</a></li>
                 <li><a href="achivement.html">Achivements</a></li>
                  <li><a href="#hi">Contact Us</a></li>
              </ul>
 
          </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
      </nav>
 <div class="text-box">
     <h1>THE BEST COLLEGE FOR NDA AND ARMY TRAINING </h1>
@@ -56,25 +60,25 @@
     
     
     </section>
-    <!-- campus code  -->
-    <section class="campus" >
+    <!-- campus code -------------------------------------------------------------------- -->
+    <section class="campus" id="camp" >
 <h1>Our Campus</h1>
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, praesentium sed adipisci minus aspernatur quaerat delectus libero corrupti nam cum accusantium iure error amet, sit recusandae non a quia qui!</p>
   <div class="row">
     <div class="campus-col">
-    <img src="5.png">
+    <img src="photos/5.png">
 <div class="layer">
     <h3>KHANDERAJURI</h3>
 </div>
     </div>
     <div class="campus-col">
-        <img src="5.png">
+        <img src="photos/5.png">
     <div class="layer">
         <h3>NIGADI</h3>
     </div>
         </div>
         <div class="campus-col">
-            <img src="8.png">
+            <img src="photos/8.png">
         <div class="layer">
             <h3>PANHALA</h3>
         </div>
@@ -91,19 +95,19 @@
      voluptatem incidunt architecto impedit illo, maxime nisi, deserunt iure? Officia ipsum ad magni, id optio at! Laborum, totam!</P>
 <div class="row">
     <div class="facilities-col">
-        <img src="6.png">
+        <img src="photos/6.png">
         <h3>NDA training court</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque mollitia accusantium, 
             aliquam voluptatem incidunt architecto impedit illo,</p>
     </div>
       <div class="facilities-col">
-          <img src="4.png">
+          <img src="photos/4.png">
           <h3>Play grounds</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque mollitia accusantium, aliquam 
               voluptatem incidunt architecto impedit illo,</p>
       </div>
     <div class="facilities-col">
-        <img src="7.png">
+        <img src="photos/7.png">
         <h3>24 X 7 Study-rooms</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque mollitia accusantium, 
             aliquam voluptatem incidunt architecto impedit illo,</p>
@@ -119,29 +123,20 @@
         aliquam voluptatem incidunt architecto impedit illo</p>
     <div class="row">
        <div class="testy-col">
-           <img src="11.png">
+           <img src="photos/11.png">
            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Minima repudiandae molestiae modi eum, iste porro, sit ipsam explicabo sunt animi odio atque c
                 umque? Possimus ea excepturi iusto placeat! Voluptas, veniam?</p>
         <h3>Aryan Shinde</h3>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-o"></i>
+       
 
         </div>
     </div>
 
         <div class="testy-col">
-            <img src="12.png">
+            <img src="photos/12.png">
             <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae molestiae modi eum, iste porro, sit ipsam explicabo sunt animi odio atque cumque? Possimus ea excepturi iusto placeat! Voluptas, veniam?</p>
          <h3>Akash Shinde</h3>
-         <i class="fa fa-star"></i>
-         <i class="fa fa-star"></i>
-         <i class="fa fa-star"></i>
-         <i class="fa fa-star"></i>
-         <i class="fa fa-star-half-o"></i>
  
          </div>
 
@@ -150,9 +145,9 @@
 
 <!-- -----------------------call to action  ------------------------------>
 
-<section class="cta">
+<section class="cta" id="admi">
     <h1>Enroll Now</h1>
-    <a href="https://6qimqzepgg4.typeform.com/to/cQQ9FUvb" class="hero-btn">Click Me</a>
+    <a href="https://6qimqzepgg4.typeform.com/to/cQQ9FUvb" class="hero-btn" target="_blank">Click Me</a>
 
 
 
@@ -232,7 +227,21 @@
         
 
     </div>
+<Script>
+   
+   var navlinks =document.getElementById("navlinks");
 
+   function showmenu(){
+    navlinks.style.right ="0";
+
+   }
+   function hidemenu() {
+        navlinks.style.right = "-200px";
+
+    }
+
+
+</Script>
 
 </body>
 </html>
